@@ -1,7 +1,7 @@
 <?php
 /**
  * External Module: Dynamic Downtime Messages
- * Creates a banner alerting users of downtime that changes its text display as downtime period approaches.
+ * Display a downtime banner (alerting users when the system is going down) that changes as downtime period approaches.
  * @author Tony Jin, Stony Brook Medicine / University
  */
 namespace StonyBrookMedicine\DynamicDowntimeMessages;
