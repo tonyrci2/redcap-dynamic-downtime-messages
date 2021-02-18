@@ -87,10 +87,6 @@ class DynamicDowntimeMessages extends AbstractExternalModule {
 		// echo $relCal;
 		// echo "<br>";
 
-		// echo "Due to scheduled maintenance, REDCap @ Stony Brook Medicine will be down (${relative}) on ${fullDate} to ${endTime}.";
-		// echo '<br>';
-		// echo "Due to scheduled maintenance, REDCap @ Stony Brook Medicine will be down (${relCal}) on ${fullDate}.";
-
 		// Will only display if downtime comes after the present time.
 
 		if ($momentFromVo->getHours() < 0) {
