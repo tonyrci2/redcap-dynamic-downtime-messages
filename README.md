@@ -1,4 +1,4 @@
-# redcap-dynamic-downtime-messages
+# Dynamic Downtime Messages (REDCap External Module)
 EM to simplify the setup of "downtime" banners in REDCap
 
 ## Configuration
