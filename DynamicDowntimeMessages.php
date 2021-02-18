@@ -23,6 +23,7 @@ require __DIR__ . '/vendor/autoload.php';
 // Customized time syntax based on user input
 // Embed placeholders in custom message for formatted time, relative time from now, etc.
 // Make banner dismissible?
+// Configure display interval (e.g., show on days 7-5, and then 2-0).
 
 
 class DynamicDowntimeMessages extends AbstractExternalModule {	
