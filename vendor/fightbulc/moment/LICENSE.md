@@ -1,6 +1,6 @@
-MIT License
+Moment.php is freely distributable under the terms of the MIT license.
 
-Copyright (c) 2017 Vanderbilt REDCap Group
+Copyright (c) 2074 Tino Ehrich
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

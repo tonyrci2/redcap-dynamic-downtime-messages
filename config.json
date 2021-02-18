@@ -1,0 +1,81 @@
+{
+	"name": "Dynamic Downtime Messages",
+
+	"namespace": "StonyBrookMedicine\\DynamicDowntimeMessages",
+
+	"description": "Dynamically changes downtime messages as the downtime event approaches.",
+
+	"authors": [
+		{
+			"name": "Tony Jin",
+			"email": "tony.jin@stonybrookmedicine.edu",
+			"institution": "Stony Brook Medicine"
+		}
+	],
+
+	"permissions": [
+		"redcap_every_page_top"
+	],	
+	"enable-every-page-hooks-on-system-pages": true,
+    "system-settings": [
+            {
+                    "key": "inst-display-name",
+                    "name": "Institution Display Name (e.g., <i>University of Los Angeles</i>)",
+                    "required": false,
+                    "type": "text",
+                    "repeatable":false,
+                    "default":""
+            },	
+            {
+                    "key": "datetime-down",
+                    "name": "Local Downtime in any Standard Format (e.g., <i>11/27/2019 3:49PM</i>)",
+                    "required": true,
+                    "type": "text",
+                    "repeatable":false,
+                    "default":""
+            },
+         	{
+			         "key": "timezone",
+			         "name": "Local Timezone (see <u><a href=\"https://www.php.net/manual/en/timezones.php\">here</a></u> for a list)",
+			         "required": true,
+			         "type": "text",
+                    "repeateable":false,			         
+			         "default":"America/New_York"
+      		},            
+            {
+                    "key": "duration-down",
+                    "name": "Duration of Downtime in Minutes (e.g., <i>90</i>)",
+                    "required": true,
+                    "type": "text",
+                    "repeateable":false,
+                    "default":"30"
+            },
+			{
+                    "key": "reason-down",
+                    "name": "Reason for Downtime (e.g., <i>a software upgrade</i>)",
+                    "required": true,
+                    "type": "text",
+                    "repeatable":false,
+                    "default":"scheduled maintenance"
+			},			
+			{
+                    "key": "div-class",
+                    "name": "Built-in Div Class for Banner (e.g., <i>yellow</i>)",
+                    "required": true,
+                    "type": "dropdown",
+					"choices":[
+								{"name":"red","value":"red"},
+								{"name":"green","value":"green"},
+								{"name":"darkgreen","value":"darkgreen"},
+								{"name":"blue","value":"blue"},
+								{"name":"yellow","value":"yellow"},
+								{"name":"brown","value":"brown"},
+								{"name":"grayed","value":"grayed"},
+								{"name":"gray","value":"gray"}
+							],
+                    "repeatable":false,
+                    "default":"yellow"			
+			}
+    ]
+
+}
