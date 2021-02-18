@@ -1,8 +1,8 @@
 <?php
 /**
  * External Module: Dynamic Downtime Messages
- * Changes downtime banner as date approaches downtime.
- * @author Tony Jin, Stony Brook University
+ * Creates a banner alerting users of downtime that changes its text display as downtime period approaches.
+ * @author Tony Jin, Stony Brook Medicine / University
  */
 namespace StonyBrookMedicine\DynamicDowntimeMessages;
 
@@ -14,14 +14,15 @@ require __DIR__ . '/vendor/autoload.php';
 
 // Future Directions:
 
-// Customize time zone – picklist or manual entry. - DONE 12/2
-// Do not display banner or send emails if past end date - DONE 12/2
+// Customize time zone – picklist or manual entry. - DONE 12/2/19
+// Do not display banner or send emails if past end date - DONE 12/2/19
 // Emails - In spirit of one-off solution – include cron jobs that deliver emails to recent users.
 // One email a week out
 // One email 1 day prior
 // Custom messages.
 // Customized time syntax based on user input
 // Embed placeholders in custom message for formatted time, relative time from now, etc.
+// Make banner dismissible?
 
 
 class DynamicDowntimeMessages extends AbstractExternalModule {	
