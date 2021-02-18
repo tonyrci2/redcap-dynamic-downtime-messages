@@ -24,6 +24,7 @@ require __DIR__ . '/vendor/autoload.php';
 // Embed placeholders in custom message for formatted time, relative time from now, etc.
 // Make banner dismissible?
 // Configure display interval (e.g., show on days 7-5, and then 2-0).
+// Choose which pages to display the banner on.
 
 
 class DynamicDowntimeMessages extends AbstractExternalModule {	
