@@ -1,5 +1,5 @@
 # redcap-dynamic-downtime-messages
-External module that simplifies the configuration of "downtime" banners in REDCap
+External module to simplify the setup and display of "downtime" banners in REDCap
 
 ## Configuration
 ![configuration](/img/start.png?raw=true "Config")
