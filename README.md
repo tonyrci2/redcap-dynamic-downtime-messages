@@ -1,6 +1,5 @@
 # Dynamic Downtime Messages (REDCap External Module)
-Purpose: To simplify the setup of "system downtime" banners in REDCap.
-Intended audience: REDCap administrators
+Purpose: Simplify the setup of "system downtime" banners in REDCap.
 
 ## Configuration
 ![configuration](/img/start.png?raw=true "Config")
