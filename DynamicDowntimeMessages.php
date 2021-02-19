@@ -35,7 +35,6 @@ class DynamicDowntimeMessages extends AbstractExternalModule {
 						: (
 						(isset($GLOBALS['institution'])) ? $GLOBALS['institution'] : ''
 						);
-		$institution = $this->getSystemSetting('inst-display-name') . 
 		$institutionText = (!empty($institution)) ? ' @ '.$institution : '';
 		// print_r($GLOBALS);
 		// print_r(get_defined_constants());
