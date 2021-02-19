@@ -40,7 +40,7 @@ class DynamicDowntimeMessages extends AbstractExternalModule {
 		// print_r(get_defined_constants());
 		if (PAGE === 'index.php' || PAGE === 'redcap/index.php' || PAGE === 'index.php?action=myprojects' || PAGE === 'redcap/index.php?action=myprojects') {
 		$timezone=strip_tags($this->getSystemSetting('timezone'));
-			// *Always* use a timezone identifier like "Europe/London" and not an abbreviation such as "GMT", since the latter will not account for daylight savings time, whereas the former will.
+			// *Always* use a timezone identifier like "Europe/London" and not an abbreviation such as "GMT", since the latter will not account for daylight saving time, whereas the former will.
 			// https://stackoverflow.com/questions/17694894/different-timezone-types-on-datetime-object
 			// What's nice about using the tz identifier is that, when printing a date/time, depending on the date, the correct timezone abbreviation (EST vs EDT) is automatically outputted.
 			\Moment\Moment::setLocale('en_US');
